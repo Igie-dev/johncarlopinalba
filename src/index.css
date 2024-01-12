@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	font-family: "Roboto", sans-serif;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+@layer utilities {
+	.section {
+		@apply px-2 md:px-5 lg:px-20 xl:px-32 2xl:px-40;
+	}
+}
