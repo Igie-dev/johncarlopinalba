@@ -1,9 +1,9 @@
-import heroImageSrc from "@/assets/hero_img.png";
+import heroImageSrc from "@/assets/hero_photo (1).jpg";
 export default function Hero() {
 	return (
-		<section className="flex flex-col w-full gap-5 py-5  section h-fit xl:h-[90vh]  lg:gap-0 2xl:gap-10 xl:flex-row">
-			<div className="w-full md:w-[60%] flex self-start flex-col  p-5 gap-5 lg:h-[90%] xl:w-[50%]  lg:w-[70%] lg:justify-center">
-				<h1 className="text-3xl font-extrabold lg:text-5xl 2xl:text-6xl">
+		<section className="flex flex-col w-full gap-5 py-5  section h-fit xl:h-[90vh] lg:gap-0  xl:flex-row ">
+			<div className="w-full md:w-[80%] flex self-start flex-col  p-5 gap-5 lg:h-[90%] lg:w-[80%]  xl:w-[50%]  lg:justify-center">
+				<h1 className="text-3xl font-extrabold sm:text-4xl md:text-5xl lg:text-6xl">
 					Experienced Electrical Engineer Specializing in Innovative Solutions
 				</h1>
 				<p className="text-sm text-balance ">
@@ -23,7 +23,7 @@ export default function Hero() {
 					<img
 						alt="Hero Picture"
 						src={heroImageSrc}
-						className="relative object-cover w-full h-full rounded-full "
+						className="relative object-cover w-full h-full "
 					/>
 				</div>
 			</div>
