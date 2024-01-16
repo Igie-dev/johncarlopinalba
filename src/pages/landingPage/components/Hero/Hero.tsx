@@ -18,8 +18,8 @@ export default function Hero() {
 				</div>
 			</div>
 			<div className="w-full h-[50vh] md:w-[60%] flex items-center  xl:self-start py-10  xl:h-full justify-center self-end lg:w-[70%] xl:w-[50%] lg:h-fit">
-				<div className="w-[30rem] h-[30rem] rounded-full relative border-b-4  pb-2 xl:h-[35rem] xl:w-[35rem] 2xl:h-[40rem] 2xl:w-[40rem] 2xl:max-w-[40rem] 2xl:max-h-[40rem]">
-					<span className="absolute top-0 left-0 w-full h-full rounded-full blur-3xl bg-secondary/20 -z-0" />
+				<div className="w-[30rem] h-[30rem]  relative   pb-2 xl:h-[35rem] xl:w-[35rem] 2xl:h-[40rem] 2xl:w-[40rem] 2xl:max-w-[40rem] 2xl:max-h-[40rem]">
+					{/* <span className="absolute top-0 left-0 w-full h-full rounded-full blur-3xl bg-secondary/20 -z-0" /> */}
 					<img
 						alt="Hero Picture"
 						src={heroImageSrc}

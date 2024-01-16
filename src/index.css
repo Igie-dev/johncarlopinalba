@@ -11,19 +11,18 @@
 }
 @layer utilities {
 	.section {
-		@apply px-2  md:px-5 lg:px-20 xl:px-32 2xl:px-44;
+		@apply px-2 md:px-5 lg:px-20 xl:px-32 2xl:px-44;
 	}
 }
 
 @layer base {
 	body::-webkit-scrollbar {
 		width: 10px;
-		height: 100%;
 	}
 	body::-webkit-scrollbar-thumb {
-		@apply bg-base-content rounded-md;
+		@apply rounded-md bg-base-300;
 	}
 	body::-webkit-scrollbar-track {
-		@apply bg-base-200;
+		@apply bg-base-100;
 	}
 }
