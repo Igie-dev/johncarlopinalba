@@ -1,0 +1,82 @@
+{
+	"projects": [
+		{
+			"id": "1",
+			"name": "Project 1",
+			"descriptions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+			"image_url": "../src/assets/bolb.jpg",
+			"project_url": "",
+			"tags": ["tag 1", "tag 2", "tag 3"]
+		},
+		{
+			"id": "2",
+			"name": "Project 2",
+			"descriptions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+			"image_url": "../src/assets/paper_design.jpg",
+			"project_url": "",
+			"tags": ["tag 1", "tag 2", "tag 3"]
+		},
+		{
+			"id": "3",
+			"name": "Project 3",
+			"descriptions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+			"image_url": "../src/assets/paper_design_2.jpg",
+			"project_url": "",
+			"tags": ["tag 1", "tag 2", "tag 3"]
+		},
+		{
+			"id": "4",
+			"name": "Project 4",
+			"descriptions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+			"image_url": "../src/assets/paper_design_3.jpg",
+			"project_url": "",
+			"tags": ["tag 1", "tag 2", "tag 3"]
+		},
+		{
+			"id": "5",
+			"name": "Project 5",
+			"descriptions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+			"image_url": "../src/assets/project_photo_4.jpg",
+			"project_url": "",
+			"tags": ["tag 1", "tag 2", "tag 3", "tag 3", "tag 4", "tag 5"]
+		}
+	],
+	"blogs": [
+		{
+			"id": "1",
+			"title": "Blog title heading will go here",
+			"descriptions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim",
+			"url": "",
+			"readTime": "5",
+			"category": "Category",
+			"image": "../src/assets/paper_design_3.jpg"
+		},
+		{
+			"id": "2",
+			"title": "Blog title heading will go here",
+			"descriptions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim",
+			"url": "",
+			"readTime": "5",
+			"category": "Category",
+			"image": "../src/assets/paper_design_3.jpg"
+		},
+		{
+			"id": "3",
+			"title": "Blog title heading will go here",
+			"descriptions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim",
+			"url": "",
+			"readTime": "5",
+			"category": "Category",
+			"image": "../src/assets/paper_design_3.jpg"
+		},
+		{
+			"id": "4",
+			"title": "Blog title heading will go here",
+			"descriptions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim",
+			"url": "",
+			"readTime": "5",
+			"category": "Category",
+			"image": "../src/assets/paper_design_3.jpg"
+		}
+	]
+}

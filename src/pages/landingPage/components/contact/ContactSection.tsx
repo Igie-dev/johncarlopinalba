@@ -1,9 +1,11 @@
 import { MdEmail } from "react-icons/md";
 import { ImPhone } from "react-icons/im";
 import { IoLocation } from "react-icons/io5";
-export default function Contact() {
+export default function ContactSection() {
 	return (
-		<section className="w-full h-[100vh] flex items-center  section lg:h-[90vh] ">
+		<section
+			id="contact"
+			className="w-full h-[100vh] flex items-center  section lg:h-[90vh] ">
 			<div className="flex flex-col items-center w-full gap-20 lg:gap-32">
 				<div className="flex flex-col items-center gap-5">
 					<h2 className="text-2xl font-semibold md:text-3xl lg:text-4xl">

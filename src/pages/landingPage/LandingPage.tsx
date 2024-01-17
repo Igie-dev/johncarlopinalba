@@ -1,18 +1,20 @@
 import Header from "./components/Header";
-import Hero from "./components/Hero/Hero";
-import About from "./components/about/About";
-import Contact from "./components/contact/Contact";
-import Footer from "./components/footer/Footer";
-import Projects from "./components/projects/Projects";
+import HeroSection from "./components/Hero/HeroSection";
+import AboutSection from "./components/about/AboutSection";
+import ContactSection from "./components/contact/ContactSection";
+import FooterSection from "./components/footer/FooterSection";
+import ProjectsSection from "./components/projects/ProjectsSection";
+import BlogSection from "./components/blog/BlogSection";
 export default function LandingPage() {
 	return (
-		<section className="flex flex-col items-center w-full h-fit ">
+		<section className="flex flex-col items-center w-full overflow-x-hidden h-fit">
 			<Header />
-			<Hero />
-			<About />
-			<Projects />
-			<Contact />
-			<Footer />
+			<HeroSection />
+			<AboutSection />
+			<ProjectsSection />
+			<BlogSection />
+			<ContactSection />
+			<FooterSection />
 		</section>
 	);
 }

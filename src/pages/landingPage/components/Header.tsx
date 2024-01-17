@@ -1,4 +1,5 @@
 import Logo from "@/shared/Logo";
+import NavigationButton from "./NavigationButton";
 export default function Header() {
 	return (
 		<header className="items-center justify-between w-full h-20 section md:flex">
@@ -22,21 +23,21 @@ export default function Header() {
 						</div>
 						<ul
 							tabIndex={0}
-							className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+							className="menu menu-sm dropdown-content mt-3 z-[1] p-2 gap-2 shadow bg-base-100 rounded-box w-52">
 							<li>
-								<a>About</a>
+								<NavigationButton scrollToId="about" btnName="About" />
 							</li>
 							<li>
-								<a>Service</a>
+								<NavigationButton scrollToId="service" btnName="Service" />
 							</li>
 							<li>
-								<a>Projects</a>
+								<NavigationButton scrollToId="projects" btnName="Projects" />
 							</li>
 							<li>
-								<a>Contact</a>
+								<NavigationButton scrollToId="blog" btnName="Blog" />
 							</li>
 							<li>
-								<a>Blog</a>
+								<NavigationButton scrollToId="contact" btnName="Contact" />
 							</li>
 						</ul>
 					</div>
@@ -45,21 +46,21 @@ export default function Header() {
 					</a>
 				</div>
 				<div className="hidden navbar-center lg:flex">
-					<ul className="px-1 menu menu-horizontal">
+					<ul className="gap-2 px-1 menu menu-horizontal">
 						<li>
-							<a>About</a>
+							<NavigationButton scrollToId="about" btnName="About" />
 						</li>
 						<li>
-							<a>Service</a>
+							<NavigationButton scrollToId="service" btnName="Service" />
 						</li>
 						<li>
-							<a>Projects</a>
+							<NavigationButton scrollToId="projects" btnName="Projects" />
+						</li>{" "}
+						<li>
+							<NavigationButton scrollToId="blog" btnName="Blog" />
 						</li>
 						<li>
-							<a>Contact</a>
-						</li>
-						<li>
-							<a>Blog</a>
+							<NavigationButton scrollToId="contact" btnName="Contact" />
 						</li>
 					</ul>
 				</div>
