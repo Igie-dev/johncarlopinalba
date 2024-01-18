@@ -1,7 +1,7 @@
 import { useInView } from "framer-motion";
-import { useRef } from "react";
+import { lazy, useRef } from "react";
 import { MdArrowForwardIos } from "react-icons/md";
-
+const BlogCardImg = lazy(() => import("./BlogCardImg"));
 type TBlog = {
 	title: string;
 	descriptions: string;
@@ -11,9 +11,8 @@ type TBlog = {
 };
 type Props = {
 	blog: TBlog;
-	index: number;
 };
-export default function BlogCard({ blog, index }: Props) {
+export default function BlogCard({ blog }: Props) {
 	const ref = useRef(null);
 	const isInView = useInView(ref, { once: false });
 
@@ -22,18 +21,11 @@ export default function BlogCard({ blog, index }: Props) {
 			ref={ref}
 			style={{
 				opacity: isInView ? 1 : 0,
-				transition: `all ${
-					0.8 + index
-				}s cubic-bezier(0.17, 0.55, 0.55, 1) 0.8s`,
+				transition: `all ${0.2}s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s`,
 			}}
-			className="flex gap-2   h-[15rem] max-w-[35rem] items-center justify-center">
+			className="flex gap-2   h-[15rem] max-w-[35rem] items-center justify-center hover:bg-base-300 cursor-pointer !hover:duration-50 !hover:delay-0 hover:scale-105 rounded-md">
 			<div className="h-full w-[45%]  flex items-center justify-center">
-				<img
-					alt="blog image"
-					loading="lazy"
-					src={blog.image}
-					className="w-[90%] h-[90%] object-cover"
-				/>
+				<BlogCardImg imgUrl={blog.image} />
 			</div>
 			<div className="flex flex-col flex-1 h-full gap-4 px-2 py-4 ">
 				<div className="flex items-center gap-4">

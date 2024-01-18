@@ -1,7 +1,9 @@
 import { MdArrowForwardIos } from "react-icons/md";
 import { TProject } from "../ProjectsSection";
 import { useInView } from "framer-motion";
-import { useRef } from "react";
+import { lazy, useRef } from "react";
+
+const ProjectCardImg = lazy(() => import("./ProjectCardImg"));
 type Props = {
 	project: TProject;
 };
@@ -45,12 +47,7 @@ export default function ProjectCard({ project }: Props) {
 					transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
 				}}
 				className="w-full h-[20rem] md:w-[50%] self-end xl:flex-1 xl:p-4 xl:h-[32rem] ">
-				<img
-					loading="lazy"
-					alt="project image"
-					src={project.image_url}
-					className="object-cover w-full h-full"
-				/>
+				<ProjectCardImg imgUrl={project.image_url} />
 			</div>
 		</div>
 	);

@@ -1,10 +1,11 @@
 import { BsTwitterX } from "react-icons/bs";
 import { FaInstagram, FaFacebookSquare, FaLinkedin } from "react-icons/fa";
 import Logo from "@/shared/Logo";
+import SocialIcons from "@/shared/SocialIcons";
 export default function FooterSection() {
 	return (
 		<>
-			<footer className="rounded-tl-[10rem] footer bg-base-300 text-base-content flex  flex-col w-full gap-10 !pl-5  py-32  section md:items-center lg:h-[30vh] lg:flex-row lg:justify-around ">
+			<footer className=" footer text-base-content flex  flex-col w-full gap-10 !pl-5 mt-20  py-32  section md:items-center lg:h-[30vh] md:flex-row  md:justify-around ">
 				<span className="">
 					<Logo />
 				</span>
@@ -26,25 +27,11 @@ export default function FooterSection() {
 				<nav>
 					<header className="footer-title">Social</header>
 					<div className="grid grid-flow-col gap-4">
-						<a href="#">
-							<FaFacebookSquare className="w-5 h-5 pointer-events-none" />
-						</a>
-
-						<a href="#">
-							<FaInstagram className="w-5 h-5 pointer-events-none" />
-						</a>
-
-						<a href="#">
-							<BsTwitterX className="w-5 h-5 pointer-events-none" />
-						</a>
-
-						<a href="#">
-							<FaLinkedin className="w-5 h-5 pointer-events-none" />
-						</a>
+						<SocialIcons />
 					</div>
 				</nav>
 			</footer>
-			<div className="flex items-center justify-center w-full h-20 bg-base-300">
+			<div className="flex items-center justify-center w-full h-20">
 				<div className="w-[90%] h-full border-t  border-neutral-content flex items-center justify-center">
 					<p className="text-xs">© 2023. All rights reserved.</p>
 				</div>

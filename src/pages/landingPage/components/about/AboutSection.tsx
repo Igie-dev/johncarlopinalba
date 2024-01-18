@@ -1,11 +1,9 @@
-import aboutPhoto from "@/assets/about_photo.png";
 import { useInView } from "framer-motion";
-import { useRef } from "react";
-import { GrLocation } from "react-icons/gr";
-import { MdOutlineLocalPhone } from "react-icons/md";
-import { MdOutlineEmail } from "react-icons/md";
-import { BsTwitterX } from "react-icons/bs";
-import { FaInstagram, FaFacebookSquare, FaLinkedin } from "react-icons/fa";
+import { lazy, useRef } from "react";
+import SocialIcons from "@/shared/SocialIcons";
+import AboutContactDetails from "./components/AboutContactDetails";
+import AboutExperience from "./components/AboutExperience";
+const AboutImage = lazy(() => import("./components/AboutImage"));
 export default function AboutSection() {
 	const ref = useRef(null);
 	const isInView = useInView(ref, { once: false });
@@ -13,39 +11,32 @@ export default function AboutSection() {
 	return (
 		<section
 			id="about"
-			className="flex flex-col-reverse w-full gap-5 py-10 section h-fit lg:py-20 lg:gap-0 xl:gap-4 xl:flex-row ">
+			className="flex flex-col-reverse w-full gap-5 py-10 section h-fit lg:py-20 lg:gap-4 xl:flex-row ">
 			<div
 				ref={ref}
 				style={{
 					opacity: isInView ? 1 : 0,
 					transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.8s",
 				}}
-				className="w-full h-[50vh] md:w-[60%] flex items-center flex-col gap-16  py-10  xl:h-full justify-center lg:w-[70%] xl:w-[50%] lg:h-fit">
-				<div className="w-[30rem] h-[30rem]  relative border-b-4 rounded-full  pb-2 xl:h-[35rem] xl:w-[35rem] 2xl:h-[40rem] 2xl:w-[40rem] 2xl:max-w-[40rem] 2xl:max-h-[40rem]">
-					<span className="absolute top-0 left-0 w-full h-full rounded-full blur-3xl bg-secondary/20 -z-0" />
-					<img
-						alt="Hero Picture"
-						loading="lazy"
-						src={aboutPhoto}
-						className="relative w-full h-full rounded-full object-contaun"
-					/>
+				className="w-full h-[70vh] md:w-[50%] flex justify-center items-center flex-col gap-16  py-10  xl:h-full  lg:w-[50%]  lg:h-fit">
+				<div className="w-[90%] h-full  flex overflow-hidden  items-center justify-center relative lg:w-full lg:h-[40rem] lg:max-w-[40rem]">
+					{/* <span className="absolute top-0 left-0 w-full h-full rounded-full blur-3xl bg-secondary/20 -z-0" /> */}
+					<AboutImage />
+					<div
+						style={{
+							background:
+								"linear-gradient(to bottom,rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0.7) 100%)",
+						}}
+						className="absolute bottom-0 left-0 z-10 w-full h-[30%] flex flex-col justify-end py-5 text-base-300  px-4">
+						<h2 className="text-lg font-semibold md:text-xl lg:text-2xl">
+							John Carlo Pinalba
+						</h2>
+						<p className="text-sm">28 Years old</p>
+						<p className="text-sm">Electrical Engineer</p>
+					</div>
 				</div>
 				<div className="grid grid-flow-col gap-4">
-					<a href="#">
-						<FaFacebookSquare className="w-5 h-5 pointer-events-none" />
-					</a>
-
-					<a href="#">
-						<FaInstagram className="w-5 h-5 pointer-events-none" />
-					</a>
-
-					<a href="#">
-						<BsTwitterX className="w-5 h-5 pointer-events-none" />
-					</a>
-
-					<a href="#">
-						<FaLinkedin className="w-5 h-5 pointer-events-none" />
-					</a>
+					<SocialIcons />
 				</div>
 			</div>
 			<div
@@ -60,7 +51,7 @@ export default function AboutSection() {
 					HELLO IT'S NICE TO SEE YOU HERE
 				</h4>
 				<h1 className="text-xl font-extrabold sm:text-2xl md:text-3xl lg:text-4xl">
-					I'm Igie Baldesanso
+					I'm John Carlo Pinalba
 				</h1>
 				<div className="flex flex-col gap-2">
 					<p className="text-sm text-balance ">
@@ -87,33 +78,11 @@ export default function AboutSection() {
 				</div>
 
 				<div className="flex flex-col items-start gap-5 mt-20">
-					<div className="flex items-center gap-8">
-						<GrLocation className="w-4 h-4" />
-						<p className="text-sm">Marikina City</p>
-					</div>
-					<div className="flex items-center gap-8">
-						<MdOutlineLocalPhone className="w-4 h-4" />
-						<p className="text-sm">+63952421841</p>
-					</div>
-					<div className="flex items-center gap-8">
-						<MdOutlineEmail className="w-4 h-4" />
-						<p className="text-sm">sample@gmailcom</p>
-					</div>
+					<AboutContactDetails />
 				</div>
 
 				<div className="flex items-center gap-10 mt-10">
-					<div className="flex flex-col items-center opacity-70">
-						<h5 className="text-lg font-bold ">0 Years</h5>
-						<p className="text-xs ">Experience</p>
-					</div>
-					<div className="flex flex-col items-center opacity-70">
-						<h5 className="text-lg font-bold ">100+</h5>
-						<p className="text-xs ">Clients</p>
-					</div>
-					<div className="flex flex-col items-center opacity-70">
-						<h5 className="text-lg font-bold ">99.9%</h5>
-						<p className="text-xs ">Satisfaction</p>
-					</div>
+					<AboutExperience />
 				</div>
 				<button className="mt-16 text-xs btn btn-outline w-fit">
 					DOWNLOAD CV

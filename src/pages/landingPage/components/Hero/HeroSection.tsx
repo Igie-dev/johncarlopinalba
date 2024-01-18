@@ -1,6 +1,7 @@
-import heroImageSrc from "@/assets/hero_photo (1).jpg";
+import heroImageSrc from "@/assets/about_img.jpg";
 import { useInView } from "framer-motion";
-import { useRef } from "react";
+import { lazy, useRef } from "react";
+const HeroImg = lazy(() => import("./components/HeroImg"));
 export default function HeroSection() {
 	const ref = useRef(null);
 	const isInView = useInView(ref, { once: false });
@@ -37,12 +38,7 @@ export default function HeroSection() {
 					}}
 					className="w-[30rem] h-[30rem]  relative   pb-2 xl:h-[35rem] xl:w-[35rem] 2xl:h-[40rem] 2xl:w-[40rem] 2xl:max-w-[40rem] 2xl:max-h-[40rem]">
 					{/* <span className="absolute top-0 left-0 w-full h-full rounded-full blur-3xl bg-secondary/20 -z-0" /> */}
-					<img
-						alt="Hero Picture"
-						loading="lazy"
-						src={heroImageSrc}
-						className="relative object-cover w-full h-full "
-					/>
+					<HeroImg imgUrl={heroImageSrc} />
 				</div>
 			</div>
 		</section>
