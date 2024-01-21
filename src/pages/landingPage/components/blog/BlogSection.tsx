@@ -19,7 +19,7 @@ export default function BlogSection() {
 					electrical engineering.
 				</p>
 			</header>
-			<main className="grid w-full grid-cols-1 grid-rows-4 gap-5 p-2 h-fit md:grid-rows-2 md:grid-cols-2 md:w-fit">
+			<main className="grid w-full grid-cols-1 grid-rows-4 gap-5 p-2 h-fit md:grid-rows-2 md:grid-cols-2">
 				{blogs.map((blog, i) => {
 					return <BlogCard key={i} blog={blog} />;
 				})}

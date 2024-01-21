@@ -1,4 +1,3 @@
-import Header from "./components/Header";
 import HeroSection from "./components/Hero/HeroSection";
 import AboutSection from "./components/about/AboutSection";
 import ContactSection from "./components/contact/ContactSection";
@@ -9,13 +8,12 @@ import ServiceSection from "./components/service/ServiceSection";
 import ScrollToTopBtn from "@/shared/ScrollToTopBtn";
 export default function LandingPage() {
 	return (
-		<section className="relative flex flex-col items-center w-full overflow-x-hidden h-fit">
-			<Header />
+		<section className="relative flex flex-col items-center w-full overflow-x-hidden h-fit bg-none">
 			<HeroSection />
-			<AboutSection />
 			<ServiceSection />
 			<ProjectsSection />
 			<BlogSection />
+			<AboutSection />
 			<ContactSection />
 			<FooterSection />
 			<ScrollToTopBtn />

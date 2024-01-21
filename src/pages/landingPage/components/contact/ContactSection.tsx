@@ -6,9 +6,9 @@ export default function ContactSection() {
 	return (
 		<section
 			id="contact"
-			className="flex flex-col w-full gap-10 my-10 h-fit section md:flex-row md:justify-between md:items-center">
+			className="flex flex-col w-full gap-10 my-10 h-fit section md:flex-row md:justify-between md:items-center md:py-20">
 			<div className="flex flex-col items-start w-full gap-20 lg:gap-32 md:w-[40%] md:h-full md:justify-center">
-				<div className="flex flex-col items-start w-full gap-10">
+				<div className="flex flex-col items-start w-full gap-10 px-2">
 					<header className="flex flex-col gap-2 text-start">
 						<h2 className="text-2xl font-semibold md:text-3xl lg:text-4xl">
 							Contact me
