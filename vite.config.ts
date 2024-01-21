@@ -9,7 +9,7 @@ export default defineConfig({
 			"@": path.resolve(__dirname, "./src"),
 		},
 	},
-	base: "https://igie-oss.github.io/johncarlopinalba/",
+	base: "/johncarlopinalba/",
 	build: {
 		outDir: "dist",
 		sourcemap: true,
