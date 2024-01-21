@@ -7,7 +7,7 @@ export default function HeroSection() {
 	const ref = useRef(null);
 	const isInView = useInView(ref, { once: false });
 	return (
-		<section className="relative flex flex-col w-full h-fit">
+		<section className="relative flex flex-col w-full h-fit bg-neutral">
 			<div
 				style={{
 					backgroundImage: `url(${HeroBgImg})`,
@@ -36,7 +36,7 @@ export default function HeroSection() {
 			</div>
 			<div
 				ref={ref}
-				className="h-[70vh] relative w-full flex gap-4 flex-col items-start justify-center md:h-[90vh] bg-neutral text-white">
+				className="h-[75vh] relative w-full flex gap-4 flex-col items-start justify-center md:h-[95vh] bg-neutral text-white">
 				<span
 					style={{
 						background:
