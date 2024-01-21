@@ -21,7 +21,7 @@ export default function ProjectCard({ project }: Props) {
 					opacity: isInView ? 1 : 0,
 					transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
 				}}
-				className="flex flex-col min-h-[16rem] px-10 gap-2 justify-center w-full  md:w-[60%] xl:w-[50%]">
+				className="flex flex-col min-h-[16rem] px-2 md:px-10 gap-2 justify-center w-full  md:w-[60%] xl:w-[50%]">
 				<h2 className="text-lg font-semibold md:text-xl lg:text-2xl">
 					{project.name}
 				</h2>

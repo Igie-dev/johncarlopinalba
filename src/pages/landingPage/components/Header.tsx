@@ -2,7 +2,9 @@ import Logo from "@/shared/Logo";
 import NavigationButton from "./NavigationButton";
 export default function Header() {
 	return (
-		<header className="items-center justify-between w-full h-20 section md:flex">
+		<header
+			id="header"
+			className="items-center justify-between w-full h-20 section md:flex">
 			<div className="w-full h-full px-2 border-b navbar bg-base-100">
 				<div className="navbar-start">
 					<div className="dropdown">
@@ -55,7 +57,7 @@ export default function Header() {
 						</li>
 						<li>
 							<NavigationButton scrollToId="projects" btnName="Projects" />
-						</li>{" "}
+						</li>
 						<li>
 							<NavigationButton scrollToId="blog" btnName="Blog" />
 						</li>

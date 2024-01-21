@@ -2,6 +2,7 @@ import { useRef } from "react";
 import ProjectCard from "./components/ProjectCard";
 import db from "@/db/db.json";
 import { useInView } from "framer-motion";
+import { Link } from "react-router-dom";
 export type TProject = {
 	id: string;
 	name: string;
@@ -38,7 +39,9 @@ export default function ProjectsSection() {
 					return <ProjectCard key={project.id} project={project} />;
 				})}
 			</main>
-			<button className="my-10 btn btn-outline w-fit">View all </button>
+			<Link to="/blogs" className="my-10 btn btn-outline w-fit">
+				View all
+			</Link>
 		</section>
 	);
 }

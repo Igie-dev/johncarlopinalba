@@ -1,5 +1,6 @@
 import db from "@/db/db.json";
 import BlogCard from "./components/BlogCard";
+import { Link } from "react-router-dom";
 export default function BlogSection() {
 	const blogs = db.blogs.slice(0, 4);
 
@@ -23,7 +24,9 @@ export default function BlogSection() {
 					return <BlogCard key={i} blog={blog} />;
 				})}
 			</main>
-			<button className="my-10 btn btn-outline w-fit">View all </button>
+			<Link to="/blogs" className="my-10 btn btn-outline w-fit">
+				View all
+			</Link>
 		</section>
 	);
 }

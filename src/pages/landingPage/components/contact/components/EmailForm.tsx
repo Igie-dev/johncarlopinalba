@@ -1,6 +1,13 @@
+import { FormEvent } from "react";
+
 export default function EmailForm() {
+	const handleSubmit = (e: FormEvent) => {
+		e.preventDefault();
+	};
 	return (
-		<form className="flex flex-col w-full gap-10 px-2 py-10 rounded-md border h-fit md:max-w-[40rem] md:px-10 shadow-sm">
+		<form
+			onSubmit={handleSubmit}
+			className="flex flex-col w-full gap-10 px-2 py-10 rounded-md border h-fit md:max-w-[40rem] md:px-10 shadow-md">
 			<header className="flex flex-col gap-2 text-start">
 				<h2 className="text-2xl font-semibold md:text-3xl lg:text-4xl">
 					Electrify My Inbox
@@ -17,6 +24,7 @@ export default function EmailForm() {
 					<input
 						id="name"
 						type="text"
+						placeholder="Name"
 						className="w-full h-10 px-2 text-sm border rounded-sm"
 					/>
 				</div>
@@ -27,6 +35,7 @@ export default function EmailForm() {
 					<input
 						id="email"
 						type="email"
+						placeholder="example@gmail.com"
 						className="w-full h-10 px-2 text-sm border rounded-sm"
 					/>
 				</div>
@@ -35,6 +44,7 @@ export default function EmailForm() {
 					<textarea
 						id="message"
 						className="w-full border min-h-[10rem] max-h-[15rem] text-sm p-2 rounded-sm"
+						placeholder="Message"
 					/>
 				</div>
 				<div>

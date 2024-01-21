@@ -1,6 +1,7 @@
 import heroImageSrc from "@/assets/about_img.jpg";
 import { useInView } from "framer-motion";
 import { lazy, useRef } from "react";
+import NavigationButton from "../NavigationButton";
 const HeroImg = lazy(() => import("./components/HeroImg"));
 export default function HeroSection() {
 	const ref = useRef(null);
@@ -27,7 +28,11 @@ export default function HeroSection() {
 					<button className="text-xs btn-md btn btn-primary">
 						DOWNLOAD CV
 					</button>
-					<button className="text-xs btn btn-outline btn-md">Contact me</button>
+					<NavigationButton
+						scrollToId="contact"
+						btnName="Contact me"
+						className="text-xs btn btn-outline btn-md"
+					/>
 				</div>
 			</div>
 			<div className="w-full h-[50vh] md:w-[60%] flex items-center  xl:self-start py-10  xl:h-full justify-center self-end lg:w-[70%] xl:w-[50%] lg:h-fit">
