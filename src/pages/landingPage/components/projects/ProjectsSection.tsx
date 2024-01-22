@@ -39,7 +39,7 @@ export default function ProjectsSection() {
 					return <ProjectCard key={project.id} project={project} />;
 				})}
 			</main>
-			<Link to="/blogs" className="my-10 btn btn-outline w-fit">
+			<Link to="/projects" className="my-10 btn btn-outline w-fit">
 				View all
 			</Link>
 		</section>

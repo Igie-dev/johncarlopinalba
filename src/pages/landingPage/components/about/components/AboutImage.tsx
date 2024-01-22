@@ -1,4 +1,4 @@
-import aboutPhoto from "@/assets/hero_img.jpg";
+import aboutPhoto from "@/assets/images/hero_img.jpg";
 export default function AboutImage() {
 	return (
 		<img

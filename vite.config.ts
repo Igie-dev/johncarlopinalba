@@ -1,6 +1,7 @@
 import { defineConfig, splitVendorChunkPlugin } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
+import { viteStaticCopy } from "vite-plugin-static-copy";
 // https://vitejs.dev/config/
 export default defineConfig({
 	plugins: [
@@ -18,6 +19,14 @@ export default defineConfig({
 				}
 			},
 		},
+		viteStaticCopy({
+			targets: [
+				{
+					src: "./src/assets/images",
+					dest: "",
+				},
+			],
+		}),
 	],
 	resolve: {
 		alias: {
@@ -25,6 +34,7 @@ export default defineConfig({
 		},
 	},
 	build: {
+		assetsInlineLimit: 0,
 		outDir: "dist",
 		sourcemap: true,
 		emptyOutDir: true,

@@ -1,6 +1,6 @@
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import HeroBgImg from "@/assets/hero_bg_img.jpg";
+import HeroBgImg from "@/assets/images/hero_bg_img.jpg";
 import HeroCard from "./components/HeroCard";
 import Header from "./components/Header";
 export default function HeroSection() {
