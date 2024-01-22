@@ -1,7 +1,7 @@
 import { useInView } from "framer-motion";
-import { lazy, useRef } from "react";
+import { useRef } from "react";
 import { MdArrowForwardIos } from "react-icons/md";
-const BlogCardImg = lazy(() => import("./BlogCardImg"));
+import BlogCardImg from "./BlogCardImg";
 type TBlog = {
 	title: string;
 	descriptions: string;
@@ -12,6 +12,7 @@ type TBlog = {
 type Props = {
 	blog: TBlog;
 };
+
 export default function BlogCard({ blog }: Props) {
 	const ref = useRef(null);
 	const isInView = useInView(ref, { once: false });

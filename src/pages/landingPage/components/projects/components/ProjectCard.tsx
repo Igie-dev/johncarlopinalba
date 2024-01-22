@@ -1,12 +1,12 @@
 import { MdArrowForwardIos } from "react-icons/md";
 import { TProject } from "../ProjectsSection";
 import { useInView } from "framer-motion";
-import { lazy, useRef } from "react";
-
-const ProjectCardImg = lazy(() => import("./ProjectCardImg"));
+import { useRef } from "react";
+import ProjectCardImg from "./ProjectCardImg";
 type Props = {
 	project: TProject;
 };
+
 export default function ProjectCard({ project }: Props) {
 	const ref = useRef(null);
 	const isInView = useInView(ref, { once: false });

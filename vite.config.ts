@@ -3,7 +3,22 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 // https://vitejs.dev/config/
 export default defineConfig({
-	plugins: [react(), splitVendorChunkPlugin()],
+	plugins: [
+		react(),
+		splitVendorChunkPlugin(),
+		{
+			name: "vite-plugin-image",
+			transform: (src) => {
+				if (src.endsWith(".jpg")) {
+					// Convert the image file to a base64 data URL
+					const data = require("fs").readFileSync(src);
+					return `export default ${JSON.stringify(
+						`data:image/jpeg;base64,${data.toString("base64")}`
+					)}`;
+				}
+			},
+		},
+	],
 	resolve: {
 		alias: {
 			"@": path.resolve(__dirname, "./src"),
@@ -28,5 +43,16 @@ export default defineConfig({
 				},
 			},
 		},
+	},
+	optimizeDeps: {
+		include: [
+			"bolb.jpg",
+			"hero_bg_img.jpg",
+			"hero_img.jpg",
+			"paper_design_2.jpg",
+			"paper_design_3.jpg",
+			"paper_design",
+			"project_photo_4.jpg",
+		], // Add your image file here
 	},
 });

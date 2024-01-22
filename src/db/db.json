@@ -4,7 +4,7 @@
 			"id": "1",
 			"name": "Project 1",
 			"descriptions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-			"image_url": "../src/assets/bolb.jpg",
+			"image_url": "@/assets/bolb.jpg",
 			"project_url": "",
 			"tags": ["tag 1", "tag 2", "tag 3"]
 		},
@@ -12,7 +12,7 @@
 			"id": "2",
 			"name": "Project 2",
 			"descriptions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-			"image_url": "../src/assets/paper_design.jpg",
+			"image_url": "@/assets/paper_design.jpg",
 			"project_url": "",
 			"tags": ["tag 1", "tag 2", "tag 3"]
 		},
@@ -20,7 +20,7 @@
 			"id": "3",
 			"name": "Project 3",
 			"descriptions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-			"image_url": "../src/assets/paper_design_2.jpg",
+			"image_url": "@/assets/paper_design_2.jpg",
 			"project_url": "",
 			"tags": ["tag 1", "tag 2", "tag 3"]
 		},
@@ -28,7 +28,7 @@
 			"id": "4",
 			"name": "Project 4",
 			"descriptions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-			"image_url": "../src/assets/paper_design_3.jpg",
+			"image_url": "@/assets/paper_design_3.jpg",
 			"project_url": "",
 			"tags": ["tag 1", "tag 2", "tag 3"]
 		},
@@ -36,7 +36,7 @@
 			"id": "5",
 			"name": "Project 5",
 			"descriptions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-			"image_url": "../src/assets/project_photo_4.jpg",
+			"image_url": "@/assets/project_photo_4.jpg",
 			"project_url": "",
 			"tags": ["tag 1", "tag 2", "tag 3", "tag 3", "tag 4", "tag 5"]
 		}
@@ -49,7 +49,7 @@
 			"url": "",
 			"readTime": "5",
 			"category": "Category",
-			"image": "../src/assets/paper_design_3.jpg"
+			"image": "@/assets/paper_design_3.jpg"
 		},
 		{
 			"id": "2",
@@ -58,7 +58,7 @@
 			"url": "",
 			"readTime": "5",
 			"category": "Category",
-			"image": "../src/assets/paper_design_3.jpg"
+			"image": "@/assets/paper_design_3.jpg"
 		},
 		{
 			"id": "3",
@@ -67,7 +67,7 @@
 			"url": "",
 			"readTime": "5",
 			"category": "Category",
-			"image": "../src/assets/paper_design_3.jpg"
+			"image": "@/assets/paper_design_3.jpg"
 		},
 		{
 			"id": "4",
@@ -76,7 +76,7 @@
 			"url": "",
 			"readTime": "5",
 			"category": "Category",
-			"image": "../src/assets/paper_design_3.jpg"
+			"image": "@/assets/paper_design_3.jpg"
 		}
 	]
 }
